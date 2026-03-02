@@ -1,0 +1,42 @@
+Un embedding (también conocido como encoding o representación densa) en el contexto 
+de inteligencia artificial y aprendizaje automático, es una forma de convertir datos 
+no estructurados, como texto, imágenes o audio, en vectores numéricos que pueden ser 
+procesados por algoritmos de aprendizaje automático.
+
+El proceso de embedding implica asignar a cada instancia de datos (como una palabra, 
+un pixel o un fragmento de audio) un vector numérico de alta dimensionalidad 
+(generalmente entre 100 y 1.000 dimensiones), que captura las características y 
+relaciones importantes en los datos. Estos vectores son llamados embeddings.
+
+Los embeddings tienen varias propiedades importantes:
+
+1. **Low-dimensional**: Aunque los embeddings tienen una gran cantidad de 
+dimensiones, su tamaño es mucho menor que el original del dato (por ejemplo, un 
+texto puede ser representado por un vector de 100 dimensiones en lugar de miles de 
+palabras).
+2. **Dense**: Los embeddings son vectores densos, lo que significa que cada 
+componente del vector tiene un valor numérico real.
+3. **Continuous**: Los embeddings pueden ser manipulados utilizando operaciones 
+matemáticas, como la distancia entre dos vectores (por ejemplo, el paralelismo entre 
+dos textos).
+
+Los embeddings se utilizan en diversas aplicaciones de aprendizaje automático, como:
+
+1. **Clasificación de texto**: los embeddings de palabras permiten a los modelos 
+aprender las relaciones semánticas entre palabras y hacer predicciones más precisas.
+2. **Reconocimiento facial**: los embeddings de imágenes permiten a los modelos 
+capturar patrones y características faciales para realizar reconocimientos más 
+efectivos.
+3. **Procesamiento del lenguaje natural**: los embeddings de texto permiten a los 
+modelos analizar el significado y la estructura del lenguaje natural.
+
+Algunos ejemplos de algoritmos que se utilizan para generar embeddings son:
+
+1. Word2vec (Word Embeddings): un algoritmo que crea embeddings para palabras en 
+función de su frecuencia y contexto.
+2. BERT (Bidirectional Encoder Representations from Transformers): un algoritmo que 
+utiliza redes neuronales para crear embeddings contextuales para texto.
+
+En resumen, los embeddings son una forma de convertir datos no estructurados en 
+vectores numéricos que pueden ser procesados por algoritmos de aprendizaje 
+automático.
