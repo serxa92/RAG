@@ -8,7 +8,7 @@ st.set_page_config(page_title="Local RAG", layout="wide")
 
 # Main title and short description
 st.title("Local RAG Question-Answering System")
-st.write("Ask a question about the indexed PDF knowledge base.")
+st.write("Ask a question about the knowledge base.")
 
 
 # Text input where the user writes a question
@@ -24,7 +24,7 @@ if st.button("Ask"):
         # Show a loading spinner while the system retrieves context
         # and generates the final answer
         with st.spinner("Generating answer..."):
-            result = ask_rag(question, top_k=5)
+            result = ask_rag(question, top_k=10)
 
         # Display final answer
         st.subheader("Answer")

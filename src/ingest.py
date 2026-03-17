@@ -44,8 +44,8 @@ def extract_text_from_pdf(pdf_path: Path) -> str:
 
 def split_into_fixed_size_chunks(
     text: str,
-    chunk_size: int = 1200,
-    overlap: int = 300
+    chunk_size: int = 800,
+    overlap: int = 150
 ) -> list[str]:
     """Split text into fixed-size chunks with overlap.
 
@@ -143,7 +143,7 @@ def ingest_pdf() -> None:
     print(f"Extracted characters: {len(text)}")
 
     # 2) Split text into chunks
-    chunks = split_into_fixed_size_chunks(text, chunk_size=1200, overlap=300)
+    chunks = split_into_fixed_size_chunks(text, chunk_size=800, overlap=150)
     print(f"Generated chunks: {len(chunks)}")
 
     # 3) Create a fresh Chroma collection

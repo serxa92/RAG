@@ -84,27 +84,17 @@ def search_similar_chunks(question: str, top_k: int = 5) -> dict:
 
 
 def build_prompt(question: str, retrieved_chunks: list[str]) -> str:
-    """Build the final prompt sent to the language model.
-
-    Args:
-        question: Original user question.
-        retrieved_chunks: Document chunks retrieved from Chroma.
-
-    Returns:
-        A prompt containing context + question.
-
-    Notes:
-        The LLM must answer only from the provided context.
-        This is what makes the system RAG instead of pure generation.
-    """
-    # Join all retrieved chunks into a single context block
     context = "\n\n".join(retrieved_chunks)
 
     prompt = f"""
-You are a helpful assistant answering questions using only the provided context.
+You are a helpful assistant.
 
-If the answer is not in the context, say:
-"I do not know based on the provided context."
+Answer the question using ONLY the provided context.
+
+IMPORTANT:
+- Answer in the SAME language as the user's question.
+- If the answer is not in the context, say:
+  "I do not know based on the provided context."
 
 Context:
 {context}
@@ -146,7 +136,7 @@ def generate_answer(prompt: str) -> str:
     return response.json()["response"]
 
 
-def ask_rag(question: str, top_k: int = 5) -> dict:
+def ask_rag(question: str, top_k: int = 10) -> dict:
     """Run the complete RAG pipeline for a user question.
 
     Args:
@@ -198,7 +188,7 @@ def main() -> None:
         print("No question provided.")
         return
 
-    result = ask_rag(question, top_k=5)
+    result = ask_rag(question, top_k=10)
 
     print("\nAnswer:\n")
     print(result["answer"])
