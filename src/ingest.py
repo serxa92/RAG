@@ -167,6 +167,7 @@ def ingest_pdf() -> None:
 
         print(f"Indexed chunk {i + 1}/{len(chunks)}")
 
+
     print("\nIngestion completed successfully.")
     print(f"Total chunks stored in Chroma: {collection.count()}")
 
