@@ -44,7 +44,7 @@ The system allows users to ask questions about a set of documents (in this case,
 
 
 
-##  Tech Stack
+## Tech Stack
 
 - **Ollama** → Local LLM and embeddings (`llama3`, `nomic-embed-text`)
 - **ChromaDB** → Vector database for semantic search
@@ -88,7 +88,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-##  4. Install Ollama
+## 4. Install Ollama
 
 Download from:
 https://ollama.com
@@ -104,6 +104,7 @@ ollama pull nomic-embed-text
 ### Step 1 — Index the documents
 
 Processes the PDF and stores embeddings in ChromaDB.
+
 ```bash
 python ingest.py
 Step 2 — Query from CLI
@@ -138,9 +139,8 @@ http://localhost:8501
 
 6. The LLM generates a response using that context
 
----
 
-### Notes
+## Notes
 
 - You must run ingest.py before querying
 
