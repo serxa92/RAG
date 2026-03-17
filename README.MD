@@ -82,13 +82,13 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-## 3. Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 4. Install Ollama
+### 4. Install Ollama
 
 Download from:
 https://ollama.com
