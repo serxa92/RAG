@@ -27,8 +27,8 @@ This project implements a **Retrieval-Augmented Generation (RAG)** system that r
 The system allows users to ask questions about a set of documents (in this case, a PDF), retrieving relevant information and generating answers using a local language model.
 
 
- ⚙️ [Installation](#️installation)
- ▶️ [Usage](#️usage)
+ ⚙️ [Installation](#installation)
+ ▶️ [Usage](#usage)
  🧠 [How it works](#how-it-works-rag-pipeline)
  ⚠️ [Notes](#️notes)
 
@@ -51,8 +51,6 @@ The system allows users to ask questions about a set of documents (in this case,
 - **Python** → Core language
 - **Streamlit** → Web interface
 - **pypdf** → PDF text extraction
-
-
 
 
 ## Installation
