@@ -30,7 +30,7 @@ The system allows users to ask questions about a set of documents (in this case,
  ⚙️ [Installation](#installation)
  ▶️ [Usage](#usage)
  🧠 [How it works](#how-it-works-rag-pipeline)
- ⚠️ [Notes](#️notes)
+ ⚠️ [Notes](#notes)
 
 
 
