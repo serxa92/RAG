@@ -203,20 +203,6 @@ def main() -> None:
     print("\nAnswer:\n")
     print(result["answer"])
 
-    print("\nRetrieved chunks:\n")
-    for i, (doc, metadata, distance) in enumerate(
-        zip(result["documents"], result["metadatas"], result["distances"]),
-        start=1
-    ):
-        print(f"--- Result {i} ---")
-        print(f"Source: {metadata.get('source')}")
-        print(f"Chunk index: {metadata.get('chunk_index')}")
-        print(f"Distance: {distance}")
-
-        # Only print part of the chunk to keep terminal output readable
-        print(doc[:500])
-        print()
-
 
 if __name__ == "__main__":
     main()
